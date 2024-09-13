@@ -5,6 +5,7 @@
 Vagrant.configure("2") do |config|
 
   config.vm.box = "cybridtechnology-labs/cybrid-vagrant-lab"
+  config.vm.box_version = "20240913.0.1"
 
   config.vm.provider "virtualbox" do |vb|
     
