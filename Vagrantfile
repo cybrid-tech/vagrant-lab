@@ -11,7 +11,7 @@ Vagrant.configure("2") do |config|
 	# Virtualbox settings
 	
 	# Display the VirtualBox GUI when booting the machine
-    vb.gui = true
+	vb.gui = true
 	
 	# Change the disk size
 	vb.disksize.size = '25GB'
