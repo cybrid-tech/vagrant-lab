@@ -6,6 +6,8 @@ Vagrant.configure("2") do |config|
 
   config.vm.box = "cybridtechnology-labs/cybrid-vagrant-lab"
   config.vm.box_version = "20240913.0.1"
+  # Change the disk size
+  config.disksize.size = "25GB"
 
   config.vm.provider "virtualbox" do |vb|
     
@@ -13,9 +15,6 @@ Vagrant.configure("2") do |config|
 	
 	# Display the VirtualBox GUI when booting the machine
 	vb.gui = true
-	
-	# Change the disk size
-	vb.disksize.size = '25GB'
 	
 	# Customize the name
 	vb.name = "cybrid-lab-ubuntu"
